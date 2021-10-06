@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&family=Montserrat&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+body{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+.offset:before{
+display:block;
+content: "";
+height: 6rem;
+}
+.navbar{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    background: rgba(0,0,0,0.6) !important;
+
+
+}
+
+.heading-content{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.heading-content h5{
+    font-size: 3em; 
+    font-weight: 300;
+    color: #fff;
+    font-family: monospace; 
+
+}
+
+.heading-content h1{
+    font-size: 4em; 
+    font-weight: bolger;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif; 
+
+}
+
+/*----------------------------About Start---------------------------------*/
+#about .button{
+    width: 40%;
+    padding: 15px 22px;
+    background: #000;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#about .button a{
+    color: #fff;
+    text-decoration:none;
+    font-size: 1em; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#about p{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+/*------------------------------ About End ------------------------------------*/ 
+
+
+/*------------------------------ Media Query ------------------------------------
+@media screen and (max-width: 767px){
+    .navbar{
+        letter-spacing: 0.1em;
+        padding: 10px 0;
+    }
+
+    .heading-content h5{
+        font-size: 3em;
+    }
+
+    .heading-content h1{
+        font-size: 3em;
+
+    }
+
+    .heading-content p{
+        font-size: 0.9em;
+    }
+}
+*/ 
+/*------------------------------ smartohones ------------------------------------*/ 
+@media screen and (max-width: 614px){
+    .navbar{
+        letter-spacing: 0.1em;
+        padding: 7px 0;
+    }
+
+    .heading-content h5{
+        font-size: 2em;
+    }
+
+    .heading-content h1{
+        font-size: 2em;
+
+    }
+
+    .heading-content p{
+        font-size: 0.7em;
+    }
+}
+/*------------------------------ smartohones ------------------------------------ 
+@media screen and (max-width: 476px){
+    .navbar{
+        letter-spacing: 0.1em;
+        padding: 6px 0;
+    }
+
+    .heading-content h5{
+        font-size: 1em;
+    }
+
+    .heading-content h1{
+        font-size: 1em;
+
+    }
+
+    .heading-content p{
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (max-width: 158px){
+    .navbar{
+        letter-spacing: 0.05em;
+        padding: 3px 0;
+    }
+
+    .heading-content h5{
+        font-size: 0.5em;
+    }
+
+    .heading-content h1{
+        font-size: 0.5em;
+
+    }
+
+    .heading-content p{
+        font-size: 0.1em;
+    }
+}
+*/
