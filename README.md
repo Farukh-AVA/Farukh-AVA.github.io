@@ -13,3 +13,4 @@
  <h1>Portfolio</h1>
  <br>
  This is my portfolio website where you can find my background, projects, contacts.  
+<a href="https://farukh-ava.github.io/portfolio/"><p>See Live</p>
