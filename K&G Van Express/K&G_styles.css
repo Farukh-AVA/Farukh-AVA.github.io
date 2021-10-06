@@ -1,0 +1,323 @@
+
+
+
+@charset "utf-8";
+@font_face{
+	font-family: Quicksand;
+	src: url('Quicksand-Regular.woff') format ('woff'),
+	url('Quicksand-Regular.tff') format ('truetype');
+}
+
+
+html{ 
+	background-color: hsl(27,72%,72%);
+}
+
+body{
+	color: rgb(91,91,91);
+	background-color: ivory;
+	font-family: Verdana, Geneva, sans-serif;
+
+}
+
+h1{
+	color: rgba(186, 186, 156);
+	background: linear-gradient(to right, rgb(139, 0, 0) 30%, black);
+}
+
+h2,h3{
+	color: rgba(186, 186, 156);
+	background-color: rgb(150, 0, 0);
+
+}
+
+h1,h2,h3{
+	font-family: Quicksand, Vendana, Geneva, sans-serif;
+	letter-spacing: 0.05em;
+}
+
+aside h1{
+	font-size: 30px;
+
+}
+
+
+img{
+	display: block;
+	width: 100%;
+
+}
+
+
+/*Menue Section Styles----------------------------------------*/
+nav.horizontal ul li a {
+
+	background-color: rgb(150, 0, 0);
+	color: rgb(186, 186, 156);
+	display: block;
+	line-height: 1.8em;
+	
+
+}
+
+nav.horizontal ul li a:link
+nav.horizontal ul li a:visited,{
+	color: rgb(186, 186, 156);
+}
+
+nav.horizontal ul li a:hover,
+nav.horizontal ul li a:active {
+color: white;	
+background-color:rgb(71, 52, 29);
+	
+}
+
+
+
+/*Aside of Home Page Styles------------------- */
+aside{
+	font-size: 0.8em;
+	list-style-type: none;
+}
+
+aside>ul{
+	line-height: 2em;
+	list-style-type: none;
+	padding-left: 5px;
+	color: rgb(232,165,116);
+}
+
+aside>ul>li.newgroup{
+	margin-top: 50px;
+}
+
+aside>ul>li>a:link, nav>ul>li>a:visited{
+color: rgb(232,165,116);
+text-decoration: none;
+}
+
+aside>ul>li>a:hover, nav>ul>li>a:active{
+color: rgb(232,165,116);
+text-decoration: underline;
+}
+
+
+
+/*Unordered Lists With Images Styles-----------------------*/
+article#about_K ul li:first-of-type{
+	list-style-image: url("time1.png")
+
+}
+
+article#about_K ul li:nth-of-type(2){
+	list-style-image: url("team2.png")
+
+} 
+
+article#about_K ul li:nth-of-type(3){
+	list-style-image: url("customer1.png")
+
+} 
+
+article#about_K ul li:nth-of-type(4){
+	list-style-image: url("safety1.png")
+	
+} 
+
+
+article#contact ul li:first-of-type{
+	margin-left: 50px;
+	list-style-image: url("phone1.png")
+
+}
+
+article#contact ul li:nth-of-type(2){
+	margin-left: 50px;
+	list-style-image: url("email.png")
+
+} 
+
+article#contact ul li:nth-of-type(3){
+	margin-left: 50px;
+	list-style-image: url("location1.png")
+
+} 
+
+
+/*Aplication Form Styles -------------------------------------------------------------------------------*/
+div.formRow{
+	-display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow:row wrap;
+	flex-flow:  row wrap;
+	flex-flow:  row wrap;
+	margin: 7px 0px;
+
+}
+
+div.formRow > *{
+	-webkit-flex: 1 1 150px;
+	flex:1 1 150px;
+}
+
+form#survey> fieldset{
+	background-color: none;
+	border-radius: 0px;
+	-webkit-flex: 1 1 300px;
+	flex:1 1 300px;
+	font-size: 0.85em;
+	padding: 10px;
+	margin: 10px;
+
+}
+
+
+input#name:focus:valid,
+input#phone:focus:valid,
+input#mail:focus:valid{
+	background: rgb(220,255,220) url(rb_valid.png) bottom right/contain no-repeat;
+
+}
+
+input#name:focus:invalid,
+input#phone:focus:invalid,
+input#mail:focus:invalid{
+	background: rgb(255,232,233) url(rb_warning.png) bottom right/contain no-repeat;
+
+}
+
+input:focus, select:focus, textarea:focus{
+	background-color: rgb(220,255,220);
+}
+
+textarea{
+	margin-top: 10px;
+	height: 100px;
+	width: 100%;
+}
+
+div#buttons{
+	text-align: center;
+	width: 100%;
+	 float: center;
+}
+input[type='submit']{
+	font-style: 1.2em;
+	padding: 0px;
+	margin: 10px;
+}
+
+
+/*Quota Styles -------------------------------------------------------------------------------*/
+/*div.formRow{
+	-display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow:row wrap;
+	flex-flow:  row wrap;
+	flex-flow:  row wrap;
+	margin: 7px 0px;
+
+}
+
+div.formRow > *{
+	-webkit-flex: 1 1 150px;
+	flex:1 1 150px;
+}
+
+form#quota> fieldset{
+	background-color: none;
+	border-radius: 0px;
+	-webkit-flex: 1 1 300px;
+	flex:1 1 300px;
+	font-size: 0.85em;
+	padding: 10px;
+	margin: 20px;
+
+}
+
+*/
+
+/*Quota Styles -------------------------------------------------------------------------------*/
+div.qoutaRow{
+   text-align: left; 
+   vertical-align: top;
+   font-size: 0.8em;
+   padding: 3px;
+   border: 1px dotted gray;
+   background-color: ivory;
+   height: 60px;
+}
+
+
+form#quota> fieldset{
+    background: linear-gradient(to right, rgb(139, 0, 0) 30%, black);
+   font-size: 1.5em; 
+   font-family: Quicksand, Vendana, Geneva, sans-serif;
+   width: 20%;
+   float: left;
+   margin-left: 10px;
+   box-shadow: rgb(51, 51, 51) 0px 0px 1px,
+               rgb(51, 51, 51) 0px 0px 5px, 
+               rgb(51, 51, 51) 0px 0px 10px,
+               rgb(51, 51, 51) 0px 0px 20px;               
+}
+
+/*Calendar Styles------------------------------------------------------------------------------------*/
+#calendar_table {
+   background: linear-gradient(to right, rgb(139, 0, 0) 30%, black); 
+   font-size: 0.9em; 
+   font-family: Quicksand, Vendana, Geneva, sans-serif;
+   width: 70%;
+   float:right;
+   margin-right: 25px;
+   box-shadow: rgb(51, 51, 51) 0px 0px 1px,
+               rgb(51, 51, 51) 0px 0px 5px, 
+               rgb(51, 51, 51) 0px 0px 10px,
+               rgb(51, 51, 51) 0px 0px 20px;               
+}
+
+#calendar_table caption {
+   caption-side: top; 
+   text-align: center;
+   padding-bottom: 20px; 
+   font-size: 1.6em; 
+   letter-spacing: 0.3em;
+
+}
+
+.calendar_weekdays {
+   background-color: rgb(150, 0, 0);
+   color: rgba(186, 186, 156);
+   width: 14.28%; 
+   font-size: 1em; 
+   border-bottom: 3px solid gray;
+}
+
+.calendar_dates {
+   text-align: left; 
+   vertical-align: top;
+   font-size: 0.8em;
+   padding: 3px;
+   border: 1px dotted gray;
+   background-color: ivory;
+   color: black;
+   height: 60px;
+}
+
+#calendar_today {
+   font-weight: bold; 
+   color: rgb(51, 51, 51);
+   background-color: rgb(251, 203, 176);
+   border: 1px solid black;
+}
+
+
+/*Footer-----------------------------------------------------------------*/
+
+body>footer{
+	color: rgba(186, 186, 156);
+	background: linear-gradient(to right, rgb(139, 0, 0) 30%, black);
+	font-size: 0.9em;
+	padding: 10px 0px;
+	text-align: center;
+}

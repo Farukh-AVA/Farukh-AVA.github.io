@@ -1,0 +1,113 @@
+
+
+
+body {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1020px;
+	min-width: 640px;
+}
+
+
+body > header {
+	margin: 0 auto;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+
+body > aside {
+	width: 20%;
+	float: left;
+	margin: 0 0 0 1.5%;
+	
+}
+
+body > article#contact {
+	width: 40%;
+	float: left;
+	margin: 0 3% 0 3%;
+}
+
+body > article#about_K {
+	width: 70%;
+	float: right;
+	margin: 0 3% 0 3%;
+}
+
+body > article#Servises {
+	width: 70%;
+	float: right;
+	margin: 0 3% 0 3%;
+}
+
+
+
+
+nav.horizontal ul li {
+	display: table-cell;
+	width: 16.6%;
+	text-align: center;
+	margin-right: 2%;
+	border: thin solid rgba(127,96,17,1.00);
+	border-collapse: collapse;
+}
+nav.horizontal ul li a {
+	margin-bottom: 0;
+}
+nav.horizontal {
+	display: table;
+	width: 100%;
+	margin: 0 auto;
+	float: none;
+}
+nav.horizontal ul {
+	display: table-row;
+	margin: 0;
+}
+nav.horizontal ul li:last-of-type {
+	margin-right: 0%;
+}
+
+nav#Image{
+	width: 22%;
+	float: left;
+	margin: 0% 0% 0% 1.5%;
+	height: 450px;
+	
+
+}
+
+nav#ImageOnlineStore{
+	width: 30%;
+	float: left;
+	margin: 5% 0% 0% 1.5%;
+	height: 450px;
+	
+
+}
+
+/* Order Table Styles */
+section#orderSection{
+	width: 60%;
+	float: right;
+	margin: 5% 0% 0% 0%;
+
+
+}
+
+form#orderForm input#orderDate {
+   text-align: left;
+  
+}
+
+table#orderTable tr:first-of-type {
+   border-bottom: 10000px solid rgb(151, 151, 151);
+   
+}
+
+body > footer {
+	width: 100%;
+	clear: left;
+}

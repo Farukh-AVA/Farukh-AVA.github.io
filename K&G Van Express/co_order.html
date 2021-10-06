@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+    New Perspectives on HTML5 and CSS3, 7th Edition
+    Term Progect 
+    
+    
+    K&G Van Express Inc 
+    Author: Farukh Khassan Khojayev
+    Date:   06/04/2021
+
+    
+   -->
+   
+   <title>Coctura Orders</title>
+
+   <meta charset="utf-8" />
+
+      <link href="K&G_styles.css" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="K&G_layout.css">
+
+   <script src="co_order.js" async></script>
+    
+</head>
+
+<body>
+   <header>
+    <img src="logo3.png"/ alt="logo"></a>
+
+      <nav class ="horizontal">
+      <ul>
+        <li><a href="index.html">K&G Van Express</a></li>
+        <li><a href="K&G_OurServices.html">Our Services</a></li>
+        <li><a href="K&G_Quota.html">Get a Quote</a></li>
+        <li><a href="K&G_Contact.html">Contact us</a></li>
+        <li><a href="K&G_OnlineStore.html">Online Store</a></li>
+        <li><a href="slideshow.html">Gallery</a></li>
+    </nav>
+   </header>
+
+   <nav id="ImageOnlineStore">
+ 		<img src="co_cooker.png">
+   </nav>
+   
+   
+   <section id="orderSection">
+      <form id="orderForm" name="orderForm" action="co_payment.html" method="get">
+        
+        <table id="orderTable">
+           <caption><h1>Product Order</h1></caption>
+           <tr>
+              <td colspan="3">
+                 <input type="text" id="orderDate" name="orderDate" readonly />
+              </td>
+           </tr>
+           <tr>
+              <td>
+                 <label for="model">List of Items</label>
+                 <select name="model" id="model" size="3" multiple>
+                    <option value="89.95"> Headphones($89.95)</option>
+                    <option value="300.95">GPS Navigator($300.95)</option>
+                    <option value="25.95">Phone Holder ($25.95)</option>
+                 </select>   
+                 <input type="hidden" id="modelName" name="modelName" />
+              </td>
+                 
+   
+           </tr>
+           
+           <tr>
+              <td colspan="2" class="rightA">Subtotal</td>
+              <td class="outcell">
+                 <input type="text" name="subtotal" id="subtotal" size="10" readonly />
+              </td>
+           </tr>
+
+           <tr>
+              <td colspan="2" class="rightA">Tax (8%)</td>
+              <td>
+                 <input type="text" name="salesTax" id="salesTax" size="10" readonly />
+              </td>
+           </tr>
+
+           <tr>
+              <td colspan="2" class="rightA">TOTAL</td>
+              <td>
+                 <input type="text" name="totalCost" id="totalCost" size="10" readonly />
+              </td>
+           </tr>
+        </table>
+        <input type="submit" id="buttonAdd" value="add to cart" />
+      </form>
+   </section>
+
+   <footer>
+   K&G Van Express &copy; 2021 All Rights Reserved
+   </footer>
+</body>
+</html>

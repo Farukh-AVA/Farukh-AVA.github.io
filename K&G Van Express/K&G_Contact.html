@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!--
+    New Perspectives on HTML5 and CSS3, 7th Edition
+    Term Progect 
+    
+    
+    K&G Van Express Inc 
+    Author: Farukh Khassan Khojayev
+    Date:   06/04/2021
+
+    
+   -->  
+  <meta charset="utf-8" />
+   <title>K&G Van Express Inc Contact</title>
+   
+  
+   <link href="K&G_styles.css" rel="stylesheet" />
+   <link rel="stylesheet" type="text/css" href="K&G_layout.css">
+</head>
+
+<body>
+  <header>
+  <img src="logo3.png"/ alt="logo"></a>
+
+    <nav class ="horizontal">
+      <ul>
+        <li><a href="index.html">K&G Van Express</a></li>
+        <li><a href="K&G_OurServices.html">Our Services</a></li>
+        <li><a href="K&G_Quota.html">Get a Quote</a></li>
+        <li><a href="K&G_Contact.html">Contact us</a></li>
+        <li><a href="K&G_OnlineStore.html">Online Store</a></li>
+        <li><a href="slideshow.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+    <h1>Contact us</h1>
+
+   <article id="contact">
+      <ul>
+         <h2>Phone</h2>
+         <li>
+         <a href="tel:+13475832393">(347) 583-2393</a> 
+         </li>
+
+         <h2>Email</h2>
+         <li><a href="mailto:insertemailhere@xyz.com"
+          >farukh022198@gmail.com</a>
+         </li>
+
+        <h2>Location</h2>
+         <li>4750 Bedford Ave,
+          Brooklyn, NY 11235
+         </li>
+      </ul>
+  </article>   
+
+<form id="survey" action="http://www.example.com/redball/survey" method="post">
+  <fieldset id="cutinfo">
+          <legend><h2>Aplication Form</h2></legend>
+
+          <div class="formRow">
+            <lable for="name">Name*</lable>
+            <input name="custName" id="name" type="text" placeholder="first last name" required="" />
+          </div>
+          
+          <div class="formRow"> 
+            <lable for="phone">Phone number</lable>
+            <input name="custPhone" id="phone" type="tel" placeholder="(nnn)-nnn-nnnn" pattern="^\d{10}$|(\(\d{3}\)\s*)? \d{3}[\s-]?\d{4}" />
+          </div>
+          
+          <div class="formRow"> 
+            <lable for="email">Email*</lable>
+            <input name="custEmail" id="email" type="email" required="" />
+          </div>
+
+          <div class="formRow">
+            <label for="inquiry">Inquiry About?</label>
+            <input type="text" name="reasonToContact" id="inquiry" list="typeOfService"/>
+            <datalist id="typeOfService">
+              <option value="Jobs"/>
+              <option value="Book a Truck"/>
+            </datalist>
+          </div>
+
+          <label for="commBox">Your messege.</label>
+          <textarea name="custExp" id="commBox"></textarea>
+
+
+          <input type="checkbox" name="mailMe" id="mailCB" value="yes">
+          <label for="mailCB">Add me to your mailing list.</label>
+
+        </fieldset>
+
+ </form>
+
+        <div id="buttons">
+          <input type="submit" value="Submit the Form">     
+        </div>
+
+        
+
+  <footer>
+    K&G Van Express &copy; 2021 All Rights Reserved
+    
+  </footer>
+
+</body>
+
+</html>
