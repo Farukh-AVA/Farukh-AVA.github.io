@@ -22,5 +22,5 @@ In order to simplify the design we went with a serverless architecture. The back
    * This Lambda function receive raw user input data and stores data in AWS DynamoDB.
    * Language: Node.js
 - [x] Backend: Batch Upload. <br>
-   * This Lambda function read an excel file with multiple tests for batch processing. The function is looping and colling Lambda functions above for precessing Drs test.
+   * This Lambda function read an excel file with multiple tests for batch processing. The function is looping and calling Lambda functions above for precessing Drs test.
    * Language: Python
