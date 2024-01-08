@@ -1,26 +1,43 @@
-## Drs Project
-This full-stack web application performs a physical therapy test for dancers and calculates dance ready score with comments. This website is hosted on [AWS Amplify](https://aws.amazon.com/amplify/) and is linked to the github repository for automatic deploy.
+# Dance Ready Score Project Overview
 
-In order to simplify the design we went with a serverless architecture. The back-end of the website are [aws lamba functions](https://aws.amazon.com/lambda/). These functions are triggered by a REST API. AWS API Gateway's are used to create those rest APIs to call the lambda function.
+The Drs Project is a full-stack web application designed for conducting a comprehensive physical therapy test tailored for dancers. The application calculates a Dance Ready Score, providing insightful comments for users. Hosted on [AWS Amplify](https://aws.amazon.com/amplify/), the application is seamlessly integrated with a GitHub repository for automated deployment.
 
-# The project Infrastructure divided into 5 milestones.   
-- [x] Front-end: Data Validation.<br>
-  * Implemented a responsev form by using HTML, CSS, JS. Implemented data validation functions to prompt and check users' data.  
-  <img src="https://github.com/Farukh-AVA/Farukh-AVA.github.io/blob/main/portfolio/InputData.gif"  width=500><br>
-- [x] Backend: Data Preprocesing. <br>
-  * Implemented AWS Lambda function that processes input data and calculates score and PT comments for each test. The function triggers from the front-end via REST API.
-  * Language: Node.js
-- [x] Backend: PDF Generator. <br>
-   * This Lambda function generates PDF output from the data of the function above, stores it in [AWS s3](https://aws.amazon.com/s3/), and returns it to the front end.
-   * Language: Python
-   <img src="https://github.com/Farukh-AVA/Farukh-AVA.github.io/blob/main/portfolio/GeneratedPDF.gif"  width=500><br>
-- [x] Backend: Send Email. <br>
-   * This Lambda function recieves email address and s3 path and sends email to the email address with the s3 file as an attachment.
-   * Language: Node.js
-   <img src="https://github.com/Farukh-AVA/Farukh-AVA.github.io/blob/main/portfolio/EmailPDF.gif"  width=500><br>
-- [x] Backend: Store data to Database. <br>
-   * This Lambda function receive raw user input data and stores data in AWS DynamoDB.
-   * Language: Node.js
-- [x] Backend: Batch Upload. <br>
-   * This Lambda function read an excel file with multiple tests for batch processing. The function is looping and calling Lambda functions above for precessing Drs test.
-   * Language: Python
+To optimize efficiency and maintain simplicity in design, we adopted a serverless architecture. The backbone of the website is powered by [AWS Lambda functions](https://aws.amazon.com/lambda/), triggered through a REST API managed by AWS API Gateway.
+
+## Project Infrastructure Milestones
+
+### 1. Front-end: Data Validation
+- Implemented a responsive form using HTML, CSS, and JS.
+- Developed data validation functions to guide users and ensure accurate data input.
+
+![Data Validation](https://github.com/Farukh-AVA/Farukh-AVA.github.io/blob/main/portfolio/InputData.gif)
+
+### 2. Backend: Data Preprocessing
+- Created an AWS Lambda function to process input data, calculate scores, and generate physical therapy comments.
+- Integration with the front-end is achieved through a REST API.
+- Language: Node.js
+
+### 3. Backend: PDF Generator
+- Developed a Lambda function that generates PDF outputs from the processed data.
+- Stored the generated PDFs in [AWS S3](https://aws.amazon.com/s3/) and returned them to the front end.
+- Language: Python
+
+![PDF Generator](https://github.com/Farukh-AVA/Farukh-AVA.github.io/blob/main/portfolio/GeneratedPDF.gif)
+
+### 4. Backend: Email Notification
+- Implemented a Lambda function that accepts an email address and S3 path, sending an email with the S3 file attached.
+- Language: Node.js
+
+![Email Notification](https://github.com/Farukh-AVA/Farukh-AVA.github.io/blob/main/portfolio/EmailPDF.gif)
+
+### 5. Backend: Database Integration
+- Developed a Lambda function to receive raw user input data, storing the data in AWS DynamoDB.
+- Language: Node.js
+
+### 6. Backend: Batch Upload
+- Implemented a Lambda function to read an Excel file containing multiple tests for batch processing.
+- The function iteratively calls the Lambda functions above to process Drs tests.
+- Language: Python
+
+This structured and detailed approach ensures the Drs Project's robustness, scalability, and seamless functionality across its various components.
+
